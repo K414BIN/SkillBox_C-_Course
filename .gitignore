@@ -1,0 +1,6 @@
+
+.vs/
+.git/
+x64/
+cmake-build-debug/
+.idea/
