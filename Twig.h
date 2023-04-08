@@ -5,11 +5,12 @@
 #ifndef TWIG
 #define TWIG
 
-class twig : private branch
+class twig : public branch
 {
 public:
 	twig();
 	~twig();
+
 
 private:
 

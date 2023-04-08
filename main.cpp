@@ -2,6 +2,8 @@
 #include <vector>
 #include <ctime>
 #include "Tree.h"
+#include "Branch.h"
+#include "Twig.h"
 
 int  max_rnd_value = 5;
 
@@ -23,10 +25,24 @@ int main() {
     max_rnd_value = 3;
     int quantity_of_twigs = gen_rnd(2);
     std::cout << "Всего деревьев: " << quantity_of_trees << std::endl;
-    tree *ptr_tree = new tree();
+    std::vector<tree*> forest(quantity_of_trees); 
+    tree* ptr_tree = new tree();
+    
     ptr_tree->quantity_of_branches =  quantity_of_branches;
-    std::vector<tree> forest(quantity_of_trees);
+    forest.emplace_back(ptr_tree);
+    branch* ptr_branch = new branch();
+    
+    ptr_branch->quantity_of_twigs = quantity_of_twigs;
 
+    twig* ptr_twig = new twig();
+    
+
+   
+
+    delete ptr_twig;
+    ptr_twig = nullptr;
+    delete ptr_branch;
+    ptr_branch = nullptr;
     delete ptr_tree;
     ptr_tree = nullptr;
    
