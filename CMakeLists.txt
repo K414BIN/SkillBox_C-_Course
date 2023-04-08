@@ -3,4 +3,4 @@ project(SkillBox)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(SkillBox main.cpp)
+add_executable(SkillBox main.cpp "Branch.h" "Tree.h" "Branch.cpp" "Tree.cpp" "Twig.h" "Twig.cpp")
