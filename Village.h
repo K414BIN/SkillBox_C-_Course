@@ -8,13 +8,15 @@
 class village
 {
 public:
-	~village();
-	village();
+	~village();	
+	village::village(house& value);
+	std::vector<house> __houses;
+	
 
-	std::vector<house> houses(house value);
 
 	
 private:
+	std::vector<house> houses(house &value);
 
 };
 

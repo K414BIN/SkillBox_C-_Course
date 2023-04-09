@@ -9,7 +9,8 @@ class settlement
 public:
 	house update(house item, int x, int y, int z, int h, std::string name);	
 	
-	settlement(village& value);
+	
+	settlement();
 	~settlement();
 	
 private:

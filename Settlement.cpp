@@ -20,9 +20,10 @@ house settlement::update(house item,int x, int y, int z, int h, std::string name
 }
 
 
-settlement::settlement(village &val)
+settlement::settlement()
 {
     house* value = new house();
+    village* ptr_village = new village(*value);
     int begin = 3;
     int end = 5;
     for (size_t i = 0; i < end; i++)    {
@@ -39,12 +40,14 @@ settlement::settlement(village &val)
             for (size_t j = rnd_min; j < len; j++)
             {
                 value->twig_i = j;
-                val.houses(*value);
+                ptr_village->__houses.push_back(*value);
             }
         }                
     }
     delete value;
     value = nullptr;
+    delete ptr_village;
+    ptr_village = nullptr;
 }
 
 settlement::~settlement()
