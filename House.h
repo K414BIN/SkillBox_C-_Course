@@ -1,11 +1,9 @@
 #pragma once
 #include <string>
-
-
-
+#include "Twig.h"
 #ifndef HOUSE
 #define HOUSE
-class house
+class house : public twig
 {
 public:
 	house();
