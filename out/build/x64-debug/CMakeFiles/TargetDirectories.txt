@@ -1,3 +1,0 @@
-C:/Users/akradioman3/source/repos/SkillBox_C_Course/out/build/x64-debug/CMakeFiles/SkillBox.dir
-C:/Users/akradioman3/source/repos/SkillBox_C_Course/out/build/x64-debug/CMakeFiles/edit_cache.dir
-C:/Users/akradioman3/source/repos/SkillBox_C_Course/out/build/x64-debug/CMakeFiles/rebuild_cache.dir
