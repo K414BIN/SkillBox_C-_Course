@@ -11,7 +11,9 @@ public:
 	~village();
 	village();
 
-	std::vector<house*> houses();
+	std::vector<house> houses(house value);
+
+	
 private:
 
 };

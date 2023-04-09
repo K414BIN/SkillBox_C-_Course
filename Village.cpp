@@ -3,9 +3,11 @@
 village::village()
 {
 }
-std::vector<house*> village::houses()
+std::vector<house> village::houses( house value)
 {
-	return std::vector<house*>();
+	std::vector<house> result;
+	result.push_back(value);
+	return result;
 }
 
 village::~village()

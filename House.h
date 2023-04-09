@@ -8,10 +8,9 @@ class house : public twig
 public:
 	house();
 	~house();
-		int tree_i;
-		int branch_i;
-		int twig_i;
-		std::string housekeeper;
+
+		int house_i=0;
+		std::string housekeeper="";
 private:
 
 };
